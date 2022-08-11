@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calculator-container {
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    grid-template-areas: "logo logo"
+        "title title"
+        "weight weight"
+        "material material"
+        "length width"
+        "thickness calculate";
+    grid-template-rows: repeat(6, min-content);
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    border: 2px solid #F1F4F7;
+    width: 364px;
+    height: auto;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.title {
+    grid-area: title;
+}
+
+.weight {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    grid-area: weight;
+    justify-self: center;
+    height: 5rem;
+}
+
+.weight-value {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.material {
+    grid-area: material;
+}
+
+.length {
+    grid-area: length;
+}
+
+.width {
+    grid-area: width;
+}
+
+.thickness {
+    grid-area: thickness;
+}
+
+.calculate-btn {
+    grid-area: calculate;
+}
