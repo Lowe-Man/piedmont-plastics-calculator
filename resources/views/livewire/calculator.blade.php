@@ -11,9 +11,20 @@
     </div>
     <div class="material mx-4">
         <label for="material" class="block mb-2 text-sm text-gray-900 dark:text-gray-400 font-semibold">Material</label>
-        <select id="material" wire:model="material" class="border cur border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <select id="material" wire:model="material" class="border cursor-pointer border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option value="0" selected>Choose a material</option>
+            <option value="0.75">PVC Foam Sheet</option>
+            <option value="0.905">Polypropylene</option>
+            <option value="0.96">UHMW</option>
+            <option value="1.04">Styrene</option>
             <option value="1.07">ABS</option>
+            <option value="1.2">Acrylic</option>
+            <option value="1.2">Polycarbonate</option>
+            <option value="1.27">PETG</option>
+            <option value="1.3">Acrylic Mirror</option>
+            <option value="1.4">PVC Type 1</option>
+            <option value="1.44">Acetal</option>
+            <option value="2.16">Teflon</option>
         </select>
     </div>
     <div class="length ml-4 mr-1 mt-4">

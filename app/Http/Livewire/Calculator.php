@@ -9,7 +9,7 @@ class Calculator extends Component {
     public $material;
     public $length;
     public $width;
-    public $thickness;
+    public $thickness = .25;
 
     protected $rules = [
         'length' => [
@@ -25,7 +25,7 @@ class Calculator extends Component {
     public function submit() {
         $this->validate();
         if ($this->material != 0) {
-            $this->weight = round((($this->length * $this->width) / 144) * $this->thickness * $this->material * 5.2, 2);
+            $this->weight = round((($this->length * $this->width) / 144) * $this->thickness * $this->material * 5.2, 1);
             $this->weight = $this->weight . "<sub class='text-[24px]'>lbs</sub>";
         } else {
             $this->weight = 0;
